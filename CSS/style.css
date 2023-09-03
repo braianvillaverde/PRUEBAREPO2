@@ -1,0 +1,51 @@
+.container {
+  display: grid;
+  height: 300px;
+  /* width: 1024px; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "header   header   header"
+    "perro1   perro2   perro3"
+    "perro4   perro4   perro5";
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.header {
+  grid-area: header;
+  background-color: cadetblue;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+.foto1 {
+  margin-top: 0;
+  grid-area: perro1;
+  justify-self: center;
+  align-self: center;
+}
+.foto2 {
+  grid-area: perro2;
+  justify-self: center;
+  align-self: center;
+}
+.foto3 {
+  grid-area: perro3;
+  justify-self: center;
+  align-self: center;
+}
+.foto4 {
+  grid-area: perro4;
+  justify-self: center;
+  align-self: center;
+}
+.foto5 {
+  grid-area: perro5;
+  justify-self: center;
+  align-self: stretch;
+}
+.imagen {
+  height: 12em;
+  width: 15em;
+  filter: brightness(1);
+}
